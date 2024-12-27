@@ -1,0 +1,76 @@
+/* src/app/components/footer/footer.component.css */
+.footer {
+    background: linear-gradient(to bottom, #1a1a1a, #000000);
+    color: #ffffff;
+    padding: 2rem 1.5rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+  
+  .footer-about,
+  .footer-links,
+  .footer-contact {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .footer-about h3,
+  .footer-links h3,
+  .footer-contact h3 {
+    font-size: 1.5rem;
+    color: #e61f1f;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-about p,
+  .footer-contact p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #ff4d4d;
+  }
+  
+  .footer-contact a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .footer-contact a:hover {
+    color: #ff4d4d;
+  }
+  
+  .footer-bottom {
+    margin-top: 2rem;
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .footer-bottom .highlight {
+    color: #e61f1f;
+  }
+  

@@ -1,0 +1,186 @@
+/* src/app/components/home/home.component.css */
+.home {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    background: #000000;
+    padding: 3rem 1.5rem;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+/* src/app/components/home/home.component.css */
+.highlight {
+    font-size: 3rem;
+    font-weight: bold;
+    color: transparent;
+    background: linear-gradient(to right, #e61f1f, #ff4d4d, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* src/app/components/home/home.component.css */
+.cta-button {
+    background: linear-gradient(45deg, #e61f1f, #ff4d4d, #ff1f1f);
+    color: white;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.5);
+    letter-spacing: 1px;
+}
+
+.cta-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.5s;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.cta-button:hover {
+    background: linear-gradient(45deg, #ff1f1f, #ff4d4d);
+    box-shadow: 0 6px 20px rgba(255, 0, 0, 0.7);
+    transform: translateY(-5px);
+}
+
+.cta-button:hover::before {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.cta-button span {
+    text-shadow: 
+        0 0 10px #ff4d4d, 
+        0 0 20px #ff4d4d, 
+        0 0 30px #ff4d4d, 
+        0 0 40px #ff1f1f, 
+        0 0 50px #ff1f1f, 
+        0 0 60px #ff1f1f;
+}
+
+.cta-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px 8px rgba(255, 0, 0, 0.6);
+}
+
+.services-overview {
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.services-overview h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.services-overview .service-cards {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service-cards .card {
+    background: #1c1c1c;
+    color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.service-cards .card:hover {
+    transform: translateY(-10px);
+}
+
+.why-choose-us {
+    margin-top: 4rem;
+    background: #1c1c1c;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.why-choose-us h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.why-choose-us ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+.why-choose-us ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.why-choose-us ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #e61f1f;
+}
+
+.cta-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta-button {
+    background: linear-gradient(45deg, #e61f1f, #ff6666);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.cta-button:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(45deg, #ff6666, #e61f1f);
+}
+
+.cta-link {
+    color: #e61f1f;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-link:hover {
+    color: #ff6666;
+    transform: translateY(-2px);
+    text-decoration: underline;
+}

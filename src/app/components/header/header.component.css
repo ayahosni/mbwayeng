@@ -1,0 +1,46 @@
+/* src/app/components/header/header.component.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    background: #ffffff; 
+    color: #000000; 
+    font-family: 'Poppins', sans-serif;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+body {
+    margin-top: 100px; 
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000000; 
+}
+
+.nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000000; 
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #e61f1f; 
+}
+
+.nav a.active {
+    color: #e61f1f; 
+}
